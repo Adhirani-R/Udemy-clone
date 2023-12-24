@@ -15,7 +15,7 @@ Static Content: Placeholder content and design elements for demonstration purpos
 **CSS:** Styling language used for visual presentation.
 
 ## How to Use:
-As this project is a static HTML/CSS version, it can be simply viewed by opening the index.html file in any web browser. There's no need for installation or setup.
+As this project is a static HTML/CSS version, it can be simply viewed by [https://adhirani-r.github.io/Udemy-clone/] in any web browser. There's no need for installation or setup.
 
 ## Contribution Guidelines:
 While this version is a basic demonstration, contributions to enhance the design, add more features using HTML/CSS, or improve the layout are appreciated. To contribute, fork the repository, make changes, and create a pull request.
