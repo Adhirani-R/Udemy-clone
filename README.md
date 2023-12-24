@@ -14,7 +14,7 @@ Static Content: Placeholder content and design elements for demonstration purpos
 **HTML:** Markup language for structuring the web page content.
 **CSS:** Styling language used for visual presentation.
 
-##How to Use:
+## How to Use:
 As this project is a static HTML/CSS version, it can be simply viewed by opening the index.html file in any web browser. There's no need for installation or setup.
 
 ## Contribution Guidelines:
