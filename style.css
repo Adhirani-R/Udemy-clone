@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif   
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
 img {
@@ -19,6 +19,10 @@ img {
     border-bottom: solid black 1px;
     gap: 10px;
     align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
 }
 
 .navbar__s1__title {
@@ -37,7 +41,7 @@ img {
 }
 
 .navbar__s2 input {
-
+    background-color: transparent;
     border: none;
     width: 100%;
     font-size: 16px;
@@ -51,6 +55,29 @@ img {
     display: flex;
     gap: 10px;
     align-items: center;
+}
+
+/* My learning popup */
+
+.mylearning {
+    position: relative;
+    cursor: pointer;
+}
+
+.mylearning__popup {
+
+    position: absolute;
+    background-color: white;
+    border: solid black 1px;
+    width: 100px;
+    top: 150%;
+    padding: 10px;
+    right: 0;
+    display: none;
+}
+.mylearning:hover .mylearning__popup{ 
+    display: block;
+
 }
 
 .categories {
@@ -68,12 +95,47 @@ img {
     border-radius: 30px;
     cursor: pointer;
     margin: 2px;
+     border: solid rgb(179, 14, 179) 1px;
+}
+.categories p:hover{
+    transition: 1s;
+    background-color: transparent;
+    color:  black;
+    border: solid rgb(179, 14, 179) 1px;
 }
 
 .sale-image img {
     width: 100%;
+
 }
 
+.sale-image {
+    position: relative;
+}
+
+.sale-image__offer {
+    width: 35%;
+    border: solid black 2px;
+    background-color: white;
+    padding: 2%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    animation-name: zoom;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@keyframes zoom {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
 .recommended {
     padding: 10px;
 
@@ -111,30 +173,34 @@ img {
     border: solid gray 2px;
     padding: 10px;
     flex-grow: 1;
-    flex-basis: 25%; 
+    flex-basis: 25%;
 }
-.poplar__container{
+
+.poplar__container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 10px;
     padding: 10px;
 }
-.footer{
+
+.footer {
     background-color: black;
     color: white;
     padding: 20px;
-   
+
 }
-.footer__one{
+
+.footer__one {
     display: flex;
     gap: 10px;
 }
-.footer__one p{
+
+.footer__one p {
     margin: 20px;
 }
 
-.footer__two{
+.footer__two {
     display: flex;
     margin: 20px;
     align-items: center;
